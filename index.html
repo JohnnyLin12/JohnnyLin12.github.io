@@ -20,8 +20,10 @@
 
   <!-- 页面元数据 -->
   
-    <title>Hexo</title>
+    <title>Johnny&#39;s Blog</title>
   
+  
+    <meta name="description" content="大二在校生 记录算法、py爬虫学习过程，分享学习心得与笔记，博采众长，共同进步！">
   
 
   <!-- feed -->
@@ -76,6 +78,8 @@
         <div class='cover-body'>
   <div class='a'>
     
+      <img class='logo' src='http://q8czc71s1.bkt.clouddn.com/avatar.png'/>
+    
     
       <p class="title">Johnny's Blog</p>
     
@@ -105,6 +109,16 @@
                 
                 id="null">
                 <i class='fas fa-rss fa-fw'></i>&nbsp;博文
+              </a>
+            </li>
+          
+            <li>
+              <a class="nav home"
+                href="https://blog.csdn.net/weixin_44855907"
+                
+                
+                id="https:blogcsdnnetweixin_44855907">
+                <i class='https://csdnimg.cn/cdn/content-toolbar/csdn-logo_.png?v=20190924.1 fa-fw'></i>&nbsp;CSDN
               </a>
             </li>
           
@@ -149,8 +163,8 @@
           
           
           
+            Johnny
           
-            VOLANTIS <b><sup style='color:#3AA757'>2.4.2</sup></b>
           
         </a>
       
@@ -163,11 +177,11 @@
             
             
               <li>
-                <a class="flat-box" href=/
+                <a class="flat-box" href=https://www.johnnylin.club
                   
                   
                   
-                    id="home"
+                    id="https:wwwjohnnylinclub"
                   >
                   
                     <i class='fas fa-rss fa-fw'></i>
@@ -258,11 +272,11 @@
             
             
               <li>
-                <a class="flat-box" href=/about/
+                <a class="flat-box" href=/about/index.md
                   
                   
                   
-                    id="about"
+                    id="aboutindexmd"
                   >
                   
                     <i class='fas fa-info-circle fa-fw'></i>
@@ -295,11 +309,11 @@
               
             
               <li>
-                <a class="flat-box" href=/
+                <a class="flat-box" href=https://www.johnnylin.club
                   
                   
                   
-                    id="home"
+                    id="https:wwwjohnnylinclub"
                   >
                   
                     <i class='fas fa-rss fa-fw'></i>
@@ -390,11 +404,11 @@
               
             
               <li>
-                <a class="flat-box" href=/about/
+                <a class="flat-box" href=/about/index.md
                   
                   
                   
-                    id="about"
+                    id="aboutindexmd"
                   >
                   
                     <i class='fas fa-info-circle fa-fw'></i>
@@ -450,7 +464,7 @@
       
         
   <h2 class="title">
-    <a href="/2020/04/04/hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+    <a href="/post/2020/04/04/hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
       hexo+Github搭建个人博客
     </a>
   </h2>
@@ -481,7 +495,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Apr 4, 2020</p>
+    <p>发布于：2020年4月4日</p>
   </a>
 </div>
 
@@ -489,6 +503,19 @@
         
           
             
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：1.6k字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：5分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -510,71 +537,14 @@
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>原先我是在CSDN边学习算法准备蓝桥杯，然后边写博客记录自己的学习心得的。后来偶然机会在B站看到有个大三的Up主搭建了自己的个人的博客写文章，我觉得挺好的也挺酷的，所以也就有了后来这个博客和这篇文章。</p>
 <h1 id="1-什么是hexo"><a href="#1-什么是hexo" class="headerlink" title="1.什么是hexo"></a>1.什么是hexo</h1><p>打开Hexo你会发现醒目的一行字：”Hexo is a fast, simple &amp; powerful blog framework”。其实说白了hexo就是个博客框架。</p>
-<h1 id="2-安装hexo"><a href="#2-安装hexo" class="headerlink" title="2.安装hexo"></a>2.安装hexo</h1><h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><ul>
-<li>安装好 Nodejs</li>
-<li>安装好 Git</li>
-<li>以及注册一个Github账号</li>
-</ul>
-<p>官网下载的Node.js安装包自带npm节点包管理工具，npm从其nmp官网下载对应的插件包到本地，因为该网站的服务器在国外，经常会出现下载缓慢或出现异常，这时便需要找到另外的方法提供稳定的下载。这个方法就是cnpm。阿里巴巴的淘宝团队把nmp官网的插件都同步到了在中国的服务器，提供给我们从这个服务器上稳定下载资源。简单来说就是为了防止因为下载速度过慢而导致失败，我们还要与预先处理一下。</p>
-<h2 id="预处理"><a href="#预处理" class="headerlink" title="预处理"></a>预处理</h2><p>解决上述问题有如下两个方法，我选择的是方法一：</p>
-<h3 id="方法一、通过npm下载cnpm"><a href="#方法一、通过npm下载cnpm" class="headerlink" title="方法一、通过npm下载cnpm"></a>方法一、通过npm下载cnpm</h3><p><strong>命令</strong></p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https:<span class="comment">//registry.npm.taobao.org</span></span><br><span class="line"><span class="comment"># 其中-g是全局的意思</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://img-blog.csdnimg.cn/20200404172105978.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>cnpm检验有没有安装成功</strong></p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/2020040417211739.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#或者</span></span><br><span class="line">cnpm -v</span><br></pre></td></tr></table></figure>
-
-<h3 id="方法二、修改npm的默认镜像源"><a href="#方法二、修改npm的默认镜像源" class="headerlink" title="方法二、修改npm的默认镜像源"></a>方法二、修改npm的默认镜像源</h3><p>1）查询当前的npm的源，“<a href="http://registry.npmjs.org”为默认的官方源。" target="_blank" rel="noopener">http://registry.npmjs.org”为默认的官方源。</a></p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
-
-<p>2） 设置npm的淘宝镜像源，“<a href="https://registry.npm.taobao.org”为淘宝的镜像源。" target="_blank" rel="noopener">https://registry.npm.taobao.org”为淘宝的镜像源。</a></p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config set registry https:<span class="comment">//registry.npm.taobao.org</span></span><br><span class="line"><span class="comment"># 通过这条set命令就可以把npm的镜像源改为国内淘宝的</span></span><br></pre></td></tr></table></figure>
-
-
-<h2 id="正式安装hexo"><a href="#正式安装hexo" class="headerlink" title="正式安装hexo"></a>正式安装hexo</h2><p>由于我预处理是用的方法一 所以我用cnpm cnpm和npm是一样的 相当于双胞胎 用方法二的伙伴把cnpm改为npm就可以了 其他照旧</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20200404172214684.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><strong>验证hexo是否安装成功</strong></p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20200404172219204.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">安装成功后进入对Hexo的初始配置</p>
-<h3 id="Hexo初始配置"><a href="#Hexo初始配置" class="headerlink" title="Hexo初始配置"></a>Hexo初始配置</h3><p>1）新建文件夹：我这里在E:/hexo下新建文件夹blog<br>2）cmd下进入blog所在目录下 hexo init 初始化文件夹blog</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20200404172510470.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">初始化成功后，得到如下文件<br><img src="https://img-blog.csdnimg.cn/20200404172526274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">这里对各个文件夹进行一个简单的说明，毕竟后面有些会用到</p>
-<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">- node_modules：是依赖包</span><br><span class="line">- public：存放的是生成的页面</span><br><span class="line">- scaffolds：命令生成文章等的模板</span><br><span class="line">- source：用命令创建的各种文章</span><br><span class="line">- themes：主题</span><br><span class="line">- _config.yml：整个博客的配置</span><br><span class="line">- db.json：source解析所得到的</span><br><span class="line">- package.json：项目所需模块项目的配置信息</span><br></pre></td></tr></table></figure>
-
-
-
-
-<h3 id="安装deployer"><a href="#安装deployer" class="headerlink" title="安装deployer"></a>安装deployer</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#安装能够将hexo部署到git page的deployer</span></span><br><span class="line">cnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20200404172814813.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="本地查看效果"><a href="#本地查看效果" class="headerlink" title="本地查看效果"></a>本地查看效果</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">常见hexo命令</span><br><span class="line"><span class="number">1</span>）generate</span><br><span class="line"></span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line">功能：生成静态文件。</span><br><span class="line">参数描述</span><br><span class="line">-d, --deploy 文件生成后立即部署网站</span><br><span class="line">-w, --watch 监视文件变动</span><br><span class="line"><span class="number">2</span>）deploy</span><br><span class="line"></span><br><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line">功能：部署网站。</span><br><span class="line">参数描述</span><br><span class="line">-g, --generate 部署网站前，需要预先生成静态文件</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>)server</span><br><span class="line"></span><br><span class="line">hexo server</span><br><span class="line"></span><br><span class="line">功能：启动服务器。</span><br><span class="line">参数描述</span><br><span class="line">-p, --port 重设端口</span><br><span class="line">-s, --<span class="keyword">static</span> 只使用静态文件</span><br><span class="line">-l, --log 启动日记记录，或覆盖记录格式</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#hexo默认会有个Hello-World的博客文件</span></span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20200404172908625.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>地址栏 输入：<a href="http://localhost:400就可以在本地看到Hello">http://localhost:400就可以在本地看到Hello</a> Word文章<br><img src="https://img-blog.csdnimg.cn/20200404172915767.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">上面只是在本地发布成功，要想让更多人看到，需要发布到远程服务器，这里部署到GitHUb</p>
-<h2 id="部署博客到Github"><a href="#部署博客到Github" class="headerlink" title="部署博客到Github"></a>部署博客到Github</h2><p> 1）首先自己创建一个Github账户。<br> 2）创建一个仓库<br>命名规范如下<br><img src="https://img-blog.csdnimg.cn/20200404173104789.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"> 3）配置SSH密钥<br>只有配置好 SSH 密钥后，我们才可以通过 git 操作实现本地代码库与 Github 代码库同步</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">在E:\hexo\blog目录下右键 bash here进入git窗口</span><br><span class="line">ssh-keygen -t -C <span class="string">"你GitHub的邮箱"</span></span><br><span class="line">两次密码直接回车</span><br><span class="line">clip &lt;~/ssh/id_sra.pub</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/2020040419040813.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">)<img src="https://img-blog.csdnimg.cn/20200404200452464.png" alt="在这里插入图片描述"></p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在GitHub个人账号中进入setting选择SSH <span class="keyword">and</span> GPG keys添加从bash生成的密钥</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/20200404190424667.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">)<img src="https://img-blog.csdnimg.cn/20200404190445485.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">测试<br>在E:\hexo\blog目录下右键 bash here进入git窗口<br>输入如下命令<br><img src="https://img-blog.csdnimg.cn/20200404190514819.png" alt="在这里插入图片描述"><br>提示如下<br><img src="https://img-blog.csdnimg.cn/20200404190740761.png" alt="在这里插入图片描述"><br>输入yes后显示如下，则表示Github的SSH设置正确<br><img src="https://img-blog.csdnimg.cn/20200404190757927.png" alt="在这里插入图片描述"></p>
-<h3 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h3><p>1)获得SSH<br><img src="https://img-blog.csdnimg.cn/20200404190931542.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>2)配置_config.yml<br>在E:/hexo/blog目录下找到_config.yml配置文件 用notepad++或者vscode打开修改<br><img src="https://img-blog.csdnimg.cn/20200404191208270.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">找到deploy结点，编辑如下：<br>repo为刚刚从GitHub复制来的SSH 粘贴即可<br><img src="https://img-blog.csdnimg.cn/20200404191110187.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="配置-Git-个人信息"><a href="#配置-Git-个人信息" class="headerlink" title="配置 Git 个人信息"></a>配置 Git 个人信息</h3><p>Git 会根据用户的名字和邮箱来记录提交，GitHub 也是用这些信息来做权限的处理，输入以下命令进行个人信息的设置，把名称和邮箱替换成你自己的，名字可以不是 GitHub 的昵称，但为了方便记忆，建议与 GitHub 一致<br>cmd下</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cmd下使用下面两条命令</span><br><span class="line">git config --<span class="keyword">global</span> user.email <span class="string">"邮箱"</span></span><br><span class="line">git config --<span class="keyword">global</span> user.name <span class="string">"用户名"</span></span><br></pre></td></tr></table></figure>
-
-<p><img src="https://img-blog.csdnimg.cn/2020040419155397.png" alt="在这里插入图片描述"><br>到这里为止 git 操作实现本地代码库与 Github 代码库同步</p>
-<h3 id="最后一步-部署到远端Github"><a href="#最后一步-部署到远端Github" class="headerlink" title="最后一步 部署到远端Github"></a>最后一步 部署到远端Github</h3><p>hexo g -d生成静态网页并把它部署到远端<br><img src="https://img-blog.csdnimg.cn/20200404191951680.png" alt="在这里插入图片描述"><br>输入：https://你的仓库名 就可以访问到了<img src="https://img-blog.csdnimg.cn/20200404191848786.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDg1NTkwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>一切都布置好了，只差一杯咖啡，接下来就可以开工慢慢写文章啦<br>3、博客编写（简单一提）</p>
-<p>我们会发现发布成功的博客文章放在_posts目录下<br><img src="https://img-blog.csdnimg.cn/2020040419162591.png" alt="在这里插入图片描述"><br>那么可以使用支持 .md编辑提供Markdown 语法编辑的的编辑器，然后保存文件到 ..\source_posts 文件夹下即可，用CSDN自带的Markdown编辑器和小书匠都可以。这里用前者。</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>）Markdown编辑器编辑博客，将生成的.md文件复制到 ..\source\_posts</span><br><span class="line"><span class="number">2</span>）然后再hexo g -d 部署到远端GitHub就可以了</span><br></pre></td></tr></table></figure>
-<h1 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h1><p>文章到这里就结束了，我自己搭建过程中还是有碰到不少坑的，所幸网上用Hexo搭建博客的人比较多，所以一搜基本上都有解决方案。所以也记录一下自己的搭建过程，也希望这篇文章能够帮助那些想用hexo搭建个人博客的小伙伴们少走点弯路。</p>
-
       
       
+        
+          <div class="button readmore">
+            <a href="/post/2020/04/04/hexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+              Read More <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
         
       
     </div>
@@ -597,7 +567,7 @@
       
         
   <h2 class="title">
-    <a href="/2020/04/04/hello-world/">
+    <a href="/post/2020/04/04/hello-world/">
       Hello World
     </a>
   </h2>
@@ -628,7 +598,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Apr 4, 2020</p>
+    <p>发布于：2020年4月4日</p>
   </a>
 </div>
 
@@ -636,6 +606,19 @@
         
           
             
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fas fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：73字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fas fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：1分钟</p>
+    </a>
+  </div>
+
 
           
         
@@ -708,9 +691,14 @@
     
       <div class='text'>
         
+          <h2>JohnnyLin</h2>
         
         
-          <p><span id="jinrishici-sentence">Hexo</span></p>
+          <p>Salt is for self-discipline,sweet for you.</p>
+
+        
+        
+          <p><span id="jinrishici-sentence">Johnny's Blog</span></p>
           <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
         
       </div>
@@ -827,19 +815,19 @@
       
     
       
-        <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
+        <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
 </div>
       
     
       
-        Use
+        本站使用
         <a href="https://volantis.js.org/" target="_blank" class="codename">Volantis</a>
-        as theme
+        作为主题
         
-          , 
-          total visits
+          ，
+          总访问量为
           <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
-          times
+          次
         
       
     
